@@ -1,0 +1,152 @@
+		/* Fonts from Socialico */
+		
+		@font-face {
+		font-family: 'fgahvtds';
+		src: url('../fonts/Socialico.eot');
+		src: url('../fonts/Socialico.woff') format('woff'),
+		url('../fonts/Socialico.ttf') format('truetype'),
+		url('../fonts/Socialico.svg') format('svg');
+		font-weight: normal;
+		font-style: normal;
+		}
+
+		body
+		{
+		  background-color:#EEE;
+		  background-image:url('../img/bg.png');
+		  text-align:cneter:/* IE Fix */
+		}
+
+		.container
+		{
+		width:90%;
+		margin:0 auto;
+		overflow:hidden;
+		}
+
+		#social {
+		float: left;
+		padding-top: .5em;
+		padding-right: 1em;
+		width:30%;
+		}
+		
+		#social a
+		{
+		border-radius: 50% 0;
+
+		}
+		
+		#social .cirl a
+		{
+		border-radius: 50%;
+		}
+
+		#social .sqr a
+		{
+		border-radius: 0%;
+		}
+		
+		[class*="icon-"] {
+		font-family: 'fgahvtds';
+		font-style: normal;
+		font-size: 3em;
+		}
+		
+		.icon-fb:after {
+		content: "f";
+		}
+		
+		.icon-twr:after {
+		content: "l";
+		}
+		
+		.icon-lnkd:after {
+		content: "i";
+		}
+		
+		.icon-rss:after {
+		content: "r";
+		}
+
+		.socialo {
+		list-style: none;
+		text-align: center;
+		}
+		
+		.socialo li {
+		position: relative;
+		display: inline-block;
+		margin-right: -4px;
+		}
+		
+		.socialo a {
+		display: block;
+		background-color: #f7f7f7;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7),to(#e7e7e7) );
+		background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7);
+		background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7);
+		background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7);
+		background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7);
+		margin: 5px;
+		width: 48px;
+		height: 48px;
+		text-decoration: none;
+		color: #555;
+		position: relative;
+		text-align: center;
+		box-shadow: 1px 3px 8px #aaa, inset 1px 2px 3px #fff;
+		}
+		
+		
+		/* Prob Starts Here *\
+		\* Same Property is used to solve issue */
+		
+		.socialo a {
+
+		/* For FF */
+		line-height:48px; /* line-height:1em;  */
+		
+		/* For IE-9 & IE-10 *\
+		line-height:62px; */
+		}
+		
+		/* For webkit */		
+		@media screen and (-webkit-min-device-pixel-ratio:0) { 
+		.socialo a {
+		line-height:36px;
+		}
+		}
+		/* Prob Ends Here */
+		
+
+		.socialo a.icon-fb:hover {
+		text-decoration: none;
+		color: #3B5998;
+		background: #f5f5f5;
+		}
+		
+		.socialo a.icon-twr:hover {
+		text-decoration: none;
+		color: #00ACEE;
+		background: #f5f5f5;
+		}
+		
+		.socialo a.icon-lnkd:hover {
+		text-decoration: none;
+		color: #006699;
+		background: #f5f5f5;
+		}
+		
+		.socialo a.icon-rss:hover {
+		text-decoration: none;
+		color: #FF7C08;
+		background: #f5f5f5;
+		}
+		
+		.socialo a.icon-rss:active,.socialo a.icon-lnkd:active,.socialo a.icon-twr:active,.socialo a.icon-fb:active
+		{
+		text-decoration: none;
+		color: #9800F9;
+		background: #f5f5f5;
+		}
